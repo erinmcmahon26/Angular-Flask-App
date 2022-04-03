@@ -1,8 +1,6 @@
-# Angular-Flask-App
+# Flask-App
 
 Built for Northwestern MS Data Science Analytics Application Engineering Course
-
-Angular Client
 
 Flask back-end
 
