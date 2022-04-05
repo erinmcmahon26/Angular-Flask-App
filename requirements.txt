@@ -1,0 +1,18 @@
+# libraries we want to use
+pytest
+pylint
+jupyter
+pytest-cov
+pandas
+nbval
+click
+flask
+requests
+# gunicorn==20.1.0
+google-cloud-bigquery
+google
+flask-cors
+flask_restful
+pyarrow
+google-cloud-bigquery-storage
+pylint-flask
