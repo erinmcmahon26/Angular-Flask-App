@@ -14,7 +14,7 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 format:
-    black *.py
+	black *.py
 
 # disables false positives and keeps recommendation warnings but leaves errors
 # linting library, command-line tool, and web application
