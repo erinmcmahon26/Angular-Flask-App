@@ -10,13 +10,13 @@ install:
 
 # test the libraries and notebooks
 test:
-	python -m pytest -vv --cov=Flask-Applib tests/*.py
-	python -m pytest --nbval notebook.ipynb
+	python -m pytest -vv test_hello.py
+	#python -m pytest --nbval notebook.ipynb
 
 # disables false positives and keeps recommendation warnings but leaves errors
 # linting library, command-line tool, and web application
 lint:
-	pylint --disable=R,C Flask-Applib cli web
+	pylint --disable=R,C hello.py
 
 # will run all of them together
 # run "make all" to have all commands run
