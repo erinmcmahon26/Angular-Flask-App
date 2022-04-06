@@ -19,5 +19,5 @@ lint:
 	pylint --disable=R,C Flask-Applib cli web
 
 # will run all of them together
-# run "make all"
+# run "make all" to have all commands run
 all: install lint test
