@@ -16,3 +16,4 @@ flask_restful
 pyarrow
 google-cloud-bigquery-storage
 pylint-flask
+black
