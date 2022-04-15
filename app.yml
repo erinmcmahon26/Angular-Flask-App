@@ -1,7 +1,7 @@
 # tells app engine to run code inside Python 3.8 sandbox
-runtime: Python38
+runtime: Python27
 # tells app engine to run version 8 of the API
-api-version: 8
+api-version: 1
 # code is threadsafe, app engine can run without worrying about threads
 threadsafe: true
 
@@ -12,4 +12,4 @@ handlers:
   # points to main.py file, .app tells the app engine to treat
   # main.py as a web server gateway interface application
   # aka tells it to look at the app variable in main.py
-  script: main.app 
+  script: main.app
