@@ -12,4 +12,4 @@ handlers:
   # points to main.py file, .app tells the app engine to treat
   # main.py as a web server gateway interface application
   # aka tells it to look at the app variable in main.py
-  script: main.app
+  script: main.app 
