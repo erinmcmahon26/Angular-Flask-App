@@ -14,7 +14,7 @@ server = app.server
 #app.config.suppress_callback_exceptions = True
 
 app.layout = html.Div(id='parent', children=[
-    html.H1(id='H1', children='Styling using html components', style={'textAlign': 'center', \
+    html.H1(id='H1', children='Wow this is hard...', style={'textAlign': 'center', \
                                                                       'marginTop': 40, 'marginBottom': 40}),
 
     #dcc.Graph(id='line_plot', figure=stock_prices())
