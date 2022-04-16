@@ -7,8 +7,6 @@ pandas
 nbval
 click
 flask
-requests
-# gunicorn==20.1.0
 google-cloud-bigquery
 google
 flask-cors
@@ -17,3 +15,11 @@ pyarrow
 google-cloud-bigquery-storage
 pylint-flask
 black
+requests
+fire==0.4.0
+fastapi==0.75.1
+uvicorn==0.17.6
+gunicorn
+dash == 2.0.0
+dash_bootstrap_components == 1.0.2
+numpy == 1.21.4
