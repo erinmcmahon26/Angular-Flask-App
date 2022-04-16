@@ -5,8 +5,8 @@ setup:
 # installs source code from a requirements file
 # also updates pip to the current version
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	pip3 install --upgrade pip &&\
+		pip3 install -r requirements.txt
 
 # test the libraries and notebooks
 test:
