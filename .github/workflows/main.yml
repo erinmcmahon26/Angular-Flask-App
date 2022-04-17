@@ -40,5 +40,5 @@ jobs:
 
       - name: deploy repo
         run: |
-          echo I'm going to deploy 
+          echo "I'm going to deploy" 
       
