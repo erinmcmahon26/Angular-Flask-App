@@ -55,4 +55,4 @@ jobs:
       - name: Deploy Backend to App Engine Develop
         run: |
           gcloud config set project ${{ secrets.GCP_PROJECT }}
-          gcloud app deploy --version 20211105t144600
+          gcloud app deploy --version 20220417t191438
