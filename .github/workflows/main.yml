@@ -31,3 +31,14 @@ jobs:
       - name: Lint with pylint
         run: |
           make lint
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      # defaults to repo that this github actions file is in
+      - uses: action/checkout@v3
+
+      - name: deploy repo
+        run: |
+          echo I'm going to deploy 
+      
