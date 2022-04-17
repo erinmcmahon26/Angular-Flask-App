@@ -1,6 +1,6 @@
 runtime: python3
 api_version: 9
-threadsafe: true
+#threadsafe: true
 
 handlers:
   - url: /.*
