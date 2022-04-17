@@ -1,5 +1,5 @@
-runtime: python3
-api_version: 9
+runtime: python39
+api_version: 1
 #threadsafe: true
 
 handlers:
