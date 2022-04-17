@@ -38,7 +38,12 @@ jobs:
       # defaults to repo that this github actions file is in
       - uses: actions/checkout@v3
 
-      - name: deploy repo
-        run: |
-          echo "I'm going to deploy" 
+      - name: Deploy an App Engine
+        uses: google-github-actions/deploy-appengine@v0.1.0
+        # configuration
+        with:
+          project: to do
+          deliverables: to do
+          credentials: to do
+
       
