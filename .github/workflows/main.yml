@@ -54,5 +54,5 @@ jobs:
 
       - name: Deploy Backend to App Engine Develop
         run: |
-          gcloud config set project ${{ secrets.GCP_PROJECT }}
-          gcloud app deploy --version booming-voice-345520
+          gcloud config set project booming-voice-345520
+          gcloud app deploy --version 20220417t191438
