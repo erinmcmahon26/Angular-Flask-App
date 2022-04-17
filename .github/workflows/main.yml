@@ -40,10 +40,8 @@ jobs:
 
       - name: Deploy an App Engine
         uses: google-github-actions/deploy-appengine@v0.1.0
-        # configuration
         with:
-          project: to do
-          deliverables: to do
-          credentials: to do
+          # ${{ github actions syntax
+          credentials: ${{ secrets.gcp_credentials }}
 
       
