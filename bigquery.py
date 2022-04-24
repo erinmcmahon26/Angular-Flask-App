@@ -5,7 +5,7 @@ client = bigquery.Client()
 
 query = """
     SELECT * 
-    FROM 'bigquery-public-data.noaa_tsunami'
+    FROM 'bigquery-public-data.noaa_tsunami.historical_source_event'
     LIMIT 100"""
 
 query_job = client.query(query) # make an API request
