@@ -12,7 +12,6 @@ google-cloud-bigquery
 google
 flask-cors
 flask_restful
-pyarrow
 google-cloud-bigquery-storage
 pylint-flask
 black
@@ -23,5 +22,6 @@ uvicorn==0.17.6
 gunicorn
 dash == 2.0.0
 dash_bootstrap_components == 1.0.2
-numpy == 1.21.4
+numpy
 werkzeug == 2.0.0
+db_dtypes
