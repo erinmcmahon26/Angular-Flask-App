@@ -51,6 +51,7 @@ jobs:
         with:
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           export_default_credentials: true
+
       - name: Deploy Backend to App Engine Develop
         run: |
 #         gcloud config set project ${{ secrets.GCP_PROJECT }}
