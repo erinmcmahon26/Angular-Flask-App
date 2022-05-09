@@ -10,7 +10,7 @@ client = bigquery.Client()
 
 query = """
     SELECT *
-    FROM `booming-voice-345520.tutorial.london_tutorial_clusters`
+    FROM `booming-voice-345520.tutorial.london_station_clusters`
     LIMIT 100
 """
 
