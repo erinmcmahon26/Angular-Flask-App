@@ -19,7 +19,7 @@ query_job = client.query(query) # make an API request
 df = query_job.to_dataframe()
 json_object = df.to_json(orient='records')
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def query():
     response = json_object
     return response
