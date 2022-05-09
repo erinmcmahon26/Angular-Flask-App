@@ -21,6 +21,5 @@ format:
 lint:
 	pylint --disable=R,C hello.py
 
-# will run all of them together
 # run "make all" to have all commands run
 all: install lint test

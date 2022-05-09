@@ -10,8 +10,8 @@ client = bigquery.Client()
 
 query = """
     SELECT *
-    FROM bigquery-public-data.noaa_tsunami.historical_source_event
-    LIMIT 20
+    FROM `booming-voice-345520.tutorial.london_tutorial_clusters`
+    LIMIT 100
 """
 
 query_job = client.query(query) # make an API request

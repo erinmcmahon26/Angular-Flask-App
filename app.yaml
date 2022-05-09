@@ -1,6 +1,10 @@
+# required, currently using python39
 runtime: python39
-#api_version: 1
-#threadsafe: true
+# selecting the environment
+# gunicorn is a WSGI server implementation commonly used to run Python web apps
+# -b (bind) is used to specify a server socket to bind
+# $(HOST) server socket
+# main:app - file we want it to fun
 entrypoint: gunicorn -b :$PORT main:app
 
 handlers:
