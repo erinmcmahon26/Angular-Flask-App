@@ -11,7 +11,7 @@ client = bigquery.Client()
 query = """
     SELECT *
     FROM `booming-voice-345520.tutorial.london_station_clusters`
-    LIMIT 100
+    LIMIT 10
 """
 
 query_job = client.query(query) # make an API request
