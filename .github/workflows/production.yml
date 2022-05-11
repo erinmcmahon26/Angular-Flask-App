@@ -1,10 +1,10 @@
-name: CI for development only
+name: CI for production only
 
 # Controls when the workflow will run
 on:
   push:
     branches:
-      - main
+      - production
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
    #This workflow contains a single job called "build"
