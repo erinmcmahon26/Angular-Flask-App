@@ -10,8 +10,8 @@ client = bigquery.Client()
 
 query = """
     SELECT *
-    FROM bigquery-public-data.noaa_tsunami.historical_source_event
-    LIMIT 20
+    FROM ML.EXPLAIN_FORECAST(MODEL worldpop.yearly_pop,
+            STRUCT(10 AS horizon, 0.8 AS confidence_level))
 """
 
 query_job = client.query(query) # make an API request
