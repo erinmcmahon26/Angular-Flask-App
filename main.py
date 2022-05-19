@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_restful import Api
 from google.cloud import bigquery
+import plotly
+import plotly.express as px
 
 app = Flask(__name__)
 api = Api(app)
