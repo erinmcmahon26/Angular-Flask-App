@@ -17,10 +17,12 @@ query = """
 query_job = client.query(query) # make an API request
 
 df = query_job.to_dataframe()
-json_object = df.to_json(orient='records')
+#json_object = df.to_json(orient='records')
+fig = px.line(df, x='time_series_timestamp', y =df.columns, title = 'World Population')
+fig.show()
 
 @app.route('/', methods=['GET'])
 def query():
-    response = json_object
+    response = fig
     return response
 
