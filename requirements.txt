@@ -20,7 +20,8 @@ fire==0.4.0
 fastapi==0.75.1
 uvicorn==0.17.6
 gunicorn
-dash == 2.0.0
+dash
+Dash
 dash_bootstrap_components == 1.0.2
 numpy
 werkzeug == 2.0.0
