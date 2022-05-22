@@ -21,8 +21,7 @@ query_job = client.query(query) # make an API request
 
 df = query_job.to_dataframe()
 #json_object = df.to_json(orient='records')
-fig = px.line(df, x='time_series_timestamp', y ='time_series_data')
-
+fig = px.line(df, x='time_series_timestamp', y ='time_series_data', title = 'World Population')
 
 app.layout = html.Div(children = [
     html.H1("World Population Forcast"),
@@ -34,5 +33,10 @@ app.layout = html.Div(children = [
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host = '0.0.0.0', port =8080, debug=True)
+
+# @app.route('/', methods=['GET'])
+# def query():
+#     response = fig
+#     return response
 
