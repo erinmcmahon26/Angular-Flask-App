@@ -10,18 +10,23 @@ flask
 Flask
 google-cloud-bigquery
 google
-flask-cors
 flask_restful
 google-cloud-bigquery-storage
 pylint-flask
 black
 requests
-fire==0.4.0
-fastapi==0.75.1
-uvicorn==0.17.6
 gunicorn
-dash == 2.0.0
 dash_bootstrap_components == 1.0.2
 numpy
 werkzeug == 2.0.0
 db_dtypes
+plotly
+plotly_express
+dash
+dash-html-components
+dash-core-components
+dash-table
+dash-daq
+dash-renderer
+Dash
+pandas
