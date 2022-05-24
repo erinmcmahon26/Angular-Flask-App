@@ -21,7 +21,7 @@ query_job = client.query(query) # make an API request
 
 df = query_job.to_dataframe()
 
-fig = px.line(df, x='time_series_timestamp', y ='time_series_data', title = 'World Population')
+fig = px.line(df, x='time_series_timestamp', y ='time_series_data')
 
 app.layout = html.Div(children = [
     html.H1("World Population Forcast"),
