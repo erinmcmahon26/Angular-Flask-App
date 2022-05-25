@@ -2,11 +2,11 @@
 
 This app was built for the Northwestern MS Data Science Analytics Application Engineering course. The purpose of this project was to create an app that could be deployed via a CI/CD pipeline and hosted on Google Cloud Platform (GCP) via its App Engine. The app produces a time series visual with historical and forecasted data for world population based off of the Google BigQuery public dataset 'worldpop' and a Google BigQuery model called ARIMA-PLUS.
 
-This project initally started as a basic Flask app that produced the historical and forecasted data as a json object. Dash was incorporated to produce a visual using plotly as well as learn about the platform. Adjustments had to me made to the app file and yaml file to get the dash app to work on Google App Engine. 
+This project initially started as a basic Flask app that produced the historical and forecasted data as a json object. Dash was incorporated to produce a visual using plotly as well as learn about the platform. Adjustments had to be made to the app file, yaml file, and requirements file to get the dash app to work on Google App Engine.
 
 ## Overall Set Up
 
-All files were created and managed locally via PyCharm. These files were then pushed to GitHub and via the .github/workflows files, they were automatically sent to Google App Engine. These workflows consist of two jobs: one that bulds the environemnt and one that deploys to Google App engine using Google credentials. These credentials were created using keys from GCP and added as GitHub secrets. Two branches were created on Github for development and production purposes. The two branches feed to two separate GCP projects to simulate a development and production environment thus producing two separate URLs. 
+All files were created and managed locally via PyCharm. These files were then pushed to GitHub and via the .github/workflows files, they were automatically sent to Google App Engine. These workflows consist of two jobs: one that builds the environment and one that deploys to Google App engine using Google credentials. These credentials were created using keys from GCP and added as GitHub secrets. Two branches were created on GitHub for development and production purposes. The two branches feed to two separate GCP projects to simulate a development and production environment thus producing two separate URLs.
 
 ## Architecture Diagram
 
@@ -32,8 +32,8 @@ GROUP BY last_updated
 ORDER BY last_updated
 ```
 
-The historical and forecasted data are saved to a separate table to then are pulled into the app by querying from BigQuery in the main.py file.  
+The historical and forecasted data were saved to a separate table and then pulled into the app by querying from BigQuery in the main.py file.![image]
 
 ## Demo
 
-video here
+https://user-images.githubusercontent.com/70080908/170315146-9393036f-7d86-45d7-a9d0-8af20427a7e3.mp4
