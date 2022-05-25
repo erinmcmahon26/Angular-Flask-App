@@ -8,7 +8,9 @@ This project initally started as a basic Flask app that produced the historical 
 
 All files were created and managed locally via PyCharm. These files were then pushed to GitHub and via the .github/workflows files, they were automatically sent to Google App Engine. These workflows consist of two jobs: one that bulds the environemnt and one that deploys to Google App engine using Google credentials. These credentials were created using keys from GCP and added as GitHub secrets. Two branches were created on Github for development and production purposes. The two branches feed to two separate GCP projects to simulate a development and production environment thus producing two separate URLs. 
 
---> Add diagram here, maybe?? 
+## Architecture Diagram
+
+![My Image](architecture.png) 
 
 ## GCP Work 
 
