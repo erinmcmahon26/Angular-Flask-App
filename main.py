@@ -1,8 +1,6 @@
 import dash
-from dash import Dash, dcc, html
+from dash import dcc, html
 from google.cloud import bigquery
-import pandas as pd
-import plotly
 import plotly.express as px
 
 app = dash.Dash(__name__)
