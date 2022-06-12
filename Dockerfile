@@ -3,6 +3,7 @@
 #RUN pip3 install -r requirements.txt
 #CMD gunicorn -b 0.0.0.0:80 main:server
 #EXPOSE 8080
+#still working on getting this to work, currently GCP is not using this file
 
 FROM python:3.8.8-slim-buster
 
@@ -13,10 +14,8 @@ WORKDIR /app
 COPY . main.py /app/
 
 # Install packages from requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 EXPOSE 8080
 
-ENTRYPOINT [ "python" ]
-
-CMD [ "main.py" ]
+CMD [ "python3", "main.py" ]

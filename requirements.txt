@@ -3,7 +3,6 @@ pytest
 pylint
 jupyter
 pytest-cov
-pandas
 nbval
 click
 flask
@@ -20,7 +19,6 @@ dash_bootstrap_components == 1.0.2
 numpy
 werkzeug == 2.0.0
 db_dtypes
-plotly
 plotly_express
 dash
 dash-html-components
@@ -29,4 +27,3 @@ dash-table
 dash-daq
 dash-renderer
 Dash
-pandas
